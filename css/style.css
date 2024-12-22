@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra de navegacion */
+
+nav {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+
+/* Estilo de Texto Iconos: Menu, Fb, WApp */
+
+nav span {
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Posicion y tamano de Botones Menu, Fb, WApp, numero */
+
+.menu span {
+  margin-left: 10px;
+  text-shadow: 2px 2px black;
+  font-size: 25px;
+}
+
+.fb span {
+  margin-left: 95%;
+  margin-top: -42px;
+  font-size: 30px;
+}
+
+.wapp span {
+  margin-left: 90%;
+  margin-top: -42px;
+  font-size: 30px;
+}
+
+.numero span {
+  margin-left: 74%;
+  margin-top: -42px;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
+}
+
+/* Mantener Numero Oculto */
+
+.wapp .numero {
+  display: none;
+}
+
+/* Mostrar Numero Oculto */
+
+.wapp:hover .numero {
+  display: block;
+}
+
+/* Hover para Botones de Fb y WApp */
+
+.fb span:hover {
+  font-size: 32px;
+  margin-top: -43px;
+  transition-duration: 0.05s;
+}
+
+.wapp span:hover {
+  font-size: 32px;
+  margin-top: -43px;
+  transition-duration: 0.05s;
+}
+
+/* Partes de informacion */
+
+.titulo {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.titulo img {
+  width: 100%;
+}
+
+/* Imagen de fondo para cada imagen */
+
+.t1 {
+  background-image: url('../img/Background\ 02\ Servicios.jpg');
+}
+
+.t2 {
+  background-image: url('../img/Background\ 01\ Acerca\ de\ Nosotros.jpg');
+}
+
+.t3 {
+  background-image: url('../img/Background\ 03\ Ideales.jpg');
+}
+
+.t4 {
+  background-image: url('../img/Background\ 04\ Contactanos.jpg');
+}
+
+/* Estilo de cada Titulo o Encabezado */
+
+.titulo h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  padding: 100px;
+  margin: 0;
+  text-shadow: 0 0 10px black;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo para caja de informacion latelaral izquierda, titulo del tema */
+
+.info {
+  background: white;
+  color: black;
+  padding: 80px;
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Quita el focus de cada link */
+
+a:focus {
+  outline: none;
+}
+
+/* Estilo para el contenedor de las cajas de informacion */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Estilo para texto de cada caja lateral derecha */
+
+.boxInfo {
+  color: #424242;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+/* Alinea texto al centro, en caja de texto lateral izquierda */
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+/* Pie de pagina */
+
+/* Estilo de caja de informacion de contacto */
+
+.infoContacto {
+  color: #FFFAF0;
+  background-color: #424242;
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.infoContacto div {
+  padding: 5px;
+}
+
+.infoContacto a {
+  color: white;
+}
+
+.infoContacto a:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.derechos {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SLIDER */
+
+.slider {
+  width: 100%;
+  margin-block-end: -16px;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}

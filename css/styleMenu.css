@@ -1,0 +1,62 @@
+/* Caja de menu */
+
+.navMenu {
+    margin-top: 61px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.6);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+}
+
+/* Estilo para el Logo del menu */
+
+.navMenu img {
+    margin-top: 100px;
+    width: 60%;
+    cursor: default;
+    filter: grayscale(100%);
+}
+
+/* Estilo de texto en menu */
+
+.navMenu a {
+    text-align: center;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.05s;
+    text-shadow: 2px 2px black;
+}
+
+.navMenu a:focus {
+    outline: none;
+}
+
+.navMenu a:hover {
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.05s;
+}
+
+/* Estilo del Boton cerrar */
+
+.navMenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.botonCerrar a:hover {
+    font-size: 45px;
+}
